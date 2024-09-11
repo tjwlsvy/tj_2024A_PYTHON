@@ -21,7 +21,8 @@ def qooqoo_store(result):
             continue  # 현재 페이지에 tbody가 없으면 다음 페이지로.
         for row in tbody.select('tr'):
             tds = row.select('td')
-            if len(tds) < 5: continue
+            if len(tds) < 5:
+                continue
             num = tds[0].text.strip(); #print(num)
             name = tds[1].select('a')[1].text.strip(); #print(name)
             phone = tds[2].text.strip(); #print(phone)
