@@ -51,6 +51,9 @@ for i , feature in enumerate(x_features):
     col = i%3
     sns.regplot(x = feature , y ='mpg' , data = data_df , ax= axs[row][col], color=plot_color[i])
 
+# plt.show()
+
+
 cylinders_1 = int(input("cylinders:"))
 displacement_1 = int(input("displacement:"))
 weight_1 = int(input("weight:"))
